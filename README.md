@@ -25,3 +25,15 @@ Youtube: https://www.youtube.com/watch?v=qw5ZEvylQBA&list=PL_KegS2ON4s7aVgtk-UI6
         new file:   Config/wsgi.py
         modified:   README.md
         new file:   manage.py
+
+
+## 3. Membuat app Django dengan nama 'App/Post'
+
+        new file:   App/Post/__init__.py
+        new file:   App/Post/admin.py
+        new file:   App/Post/apps.py
+        new file:   App/Post/migrations/__init__.py
+        new file:   App/Post/models.py
+        new file:   App/Post/tests.py
+        new file:   App/Post/views.py
+        modified:   README.md
