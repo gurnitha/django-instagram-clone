@@ -11,3 +11,7 @@ Youtube: https://www.youtube.com/watch?v=qw5ZEvylQBA&list=PL_KegS2ON4s7aVgtk-UI6
         modified:   README.md
 
 
+## 1. APA YANG AKAN KITA BUAT?
+
+        modified:   README.md
+
