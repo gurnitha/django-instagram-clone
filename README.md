@@ -97,3 +97,11 @@ Youtube: https://www.youtube.com/watch?v=qw5ZEvylQBA&list=PL_KegS2ON4s7aVgtk-UI6
         new file:   media/user_1/architecture-5339245_1920.jpg
 
         :)
+
+
+#### 9. Memodifikasi homepage
+
+        modified:   README.md
+        new file:   static/house.jpg
+        modified:   templates/base.html
+        modified:   templates/index.html
