@@ -49,3 +49,25 @@ Youtube: https://www.youtube.com/watch?v=qw5ZEvylQBA&list=PL_KegS2ON4s7aVgtk-UI6
 
         modified:   Config/settings.py
         modified:   README.md
+
+
+#### 6. Membuat requirements.txt file
+
+        > pip list
+
+        Package             Version
+		------------------- -------
+		asgiref             3.7.2
+		crispy-bootstrap4   2022.1
+		Django              4.2.2
+		django-crispy-forms 2.0
+		pip                 23.1.2
+		setuptools          56.0.0
+		sqlparse            0.4.4
+		typing_extensions   4.6.3
+		tzdata              2023.3
+
+		> pip freeze > requirements.txt
+
+        modified:   README.md
+        new file:   requirements.txt
