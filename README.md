@@ -43,3 +43,9 @@ Youtube: https://www.youtube.com/watch?v=qw5ZEvylQBA&list=PL_KegS2ON4s7aVgtk-UI6
 
         modified:   App/Post/apps.py
         modified:   Config/settings.py
+
+
+#### 5. Setup Config/settings.py
+
+        modified:   Config/settings.py
+        modified:   README.md
