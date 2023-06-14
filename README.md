@@ -71,3 +71,18 @@ Youtube: https://www.youtube.com/watch?v=qw5ZEvylQBA&list=PL_KegS2ON4s7aVgtk-UI6
 
         modified:   README.md
         new file:   requirements.txt
+
+
+#### 7. Membuat homepage: views, templates, urls dan static files
+
+        new file:   App/Post/urls.py
+        modified:   App/Post/views.py
+        modified:   Config/urls.py
+        modified:   README.md
+        new file:   static/assets1/default-user.png
+        new file:   static/assets1/default.jpg
+        ...
+        new file:   static/assets3/images/login-img.jpg
+        new file:   static/default.jpg
+        new file:   templates/base.html
+        new file:   templates/index.html
