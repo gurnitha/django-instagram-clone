@@ -86,3 +86,14 @@ Youtube: https://www.youtube.com/watch?v=qw5ZEvylQBA&list=PL_KegS2ON4s7aVgtk-UI6
         new file:   static/default.jpg
         new file:   templates/base.html
         new file:   templates/index.html
+
+
+#### 8. Membuat models: Tag, Post, Follow, Stream, migrations, superuser dan add post
+
+        modified:   App/Post/admin.py
+        new file:   App/Post/migrations/0001_initial.py
+        modified:   App/Post/models.py
+        modified:   README.md
+        new file:   media/user_1/architecture-5339245_1920.jpg
+
+        :)
