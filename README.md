@@ -105,3 +105,20 @@ Youtube: https://www.youtube.com/watch?v=qw5ZEvylQBA&list=PL_KegS2ON4s7aVgtk-UI6
         new file:   static/house.jpg
         modified:   templates/base.html
         modified:   templates/index.html
+
+
+#### 10. Render posts to homepage
+
+        modified:   App/Post/models.py
+        modified:   App/Post/views.py
+        modified:   Config/settings.py
+        modified:   Config/urls.py
+        new file:   media/user_1/ads-manage.JPG
+        new file:   media/user_2/3d-geometrical-texture.jpg
+        new file:   media/user_2/3d-geometrical-texture_g8vSjdS.jpg
+        new file:   media/user_2/ads-manage.JPG
+        new file:   media/user_2/logo-ombak.PNG
+        new file:   media/user_2/pernikahan_ss.JPG
+        modified:   templates/index.html
+
+        :)

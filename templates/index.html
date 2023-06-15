@@ -111,13 +111,19 @@
                 </button>
             </div>
             <div class="posts">
+
+                {% if post_items %}
+                {% for post in post_items %}
+                <!-- Post -->
                 <article class="post">
                     <div class="post__header">
                         <div class="post__profile">
                             <a href="/media/profile_pciture/WhatsApp_Image_2021-10-18_at_11.10.52_PM.jpeg" class="post__avatar">
                             <img src="{% static 'assets2/images/7.png' %}" alt="User Picture">
                             </a>
-                            <a href="princewillmpama" class="post__user">princewillmpama</a>
+                            <a href="princewillmpama" class="post__user">
+                                {{post.user.username}}
+                            </a>
                         </div>
                         <button class="post__more-options">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -129,9 +135,16 @@
                     </div>
                     <div class="post__content">
                         <div class="post__medias">
-                            <a href="/32e19de4-c8df-4a00-b817-7b7b3effafdd"><img class="post__media" src="{% static 'house.jpg' %}" alt="Post Content" style="width: 700px; height: 348px; object-fit: cover;"></a>
-                            <!--                                <img class="post__media" src="/static/assets1/insta-clone.png" alt="Post Content">-->
-                            <!--                                <img class="post__media" src="/static/assets1/insta-clone.png" alt="Post Content">-->
+                            <a href="/32e19de4-c8df-4a00-b817-7b7b3effafdd">
+                                <img 
+                                    class="post__media" 
+                                    src="{{post.picture.url}}" 
+                                    alt="Post Content" 
+                                    style="
+                                        width: 700px; 
+                                        height: 348px; 
+                                        object-fit: cover;">
+                            </a>
                         </div>
                     </div>
                     <div class="post__footer">
@@ -160,16 +173,18 @@
                         </div>
                         <div class="post__infos">
                             <div class="post__likes">
-                                <a href="#" class="post__likes-avatar">
-                                    <!--                                        <img src="assets1/default-user.png" alt="User Picture">-->
-                                </a>
-                                <!--                                    <span>Liked by <a class="post__name&#45;&#45;underline" href="#">user123</a> and <a href="#">73 others</a></span>-->
-                                <span>0 <a class="post__name--underline" href="#">likes</a> <a href="#"></a></span>
+                                <!-- <a href="#" class="post__likes-avatar">
+                                 <img src="{% static 'assets1/default-user.png' %}" alt="User Picture">
+                                </a> -->
+                                <!-- <span>Liked by <a class="post__name&#45;&#45;underline" href="#">user123</a> and <a href="#">73 others</a></span> -->
+                                <span>{{post.likes}} likes</span>
                             </div>
                             <div class="post__description">
                                 <span>
-                                <a class="post__name--underline" href="#"><b>@princewillmpama</b></a>
-                                Me At Work
+                                    <a class="post__name--underline" href="#">
+                                        <b>@{{post.user.username}}</b>
+                                    </a>
+                                    {{post.caption}}
                                 </span>
                                 <!--                                    Me At Work-->
                             </div>
@@ -184,10 +199,34 @@
                                 # computer
                                 </a>
                             </p>
-                            <span class="post__date-time">April 7, 2022</span>
+                            <span class="post__date-time">
+                                {% for tag in post.tags.all %}
+                                <a style="
+                                    text-decoration: none; 
+                                    color: black; 
+                                    font-size: 12px; 
+                                    text-transform: lowercase;" 
+                                    href="{{tag.get_absolute_rul}}">
+                                    {{tag.title}} 
+                                </a>
+                                {% endfor %}
+                            </span>
+                            <span 
+                                class="post__date-time">
+                                {{post.posted|date:"d M, Y"}}
+                            </span>
                         </div>
                     </div>
                 </article>
+                <!-- Post end -->
+                {% endfor %}
+
+                {% else %}
+                <article class="post">
+                    <p>No post found.</p>
+                </article>
+                {% endif %}
+
                 <div class="side-menu__suggestions-content" style="padding: 0 40px;">
                     <div class="side-menu__suggestions-header">
                         <h2>Suggestions for You</h2>
